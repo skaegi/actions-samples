@@ -17,4 +17,4 @@ jobs:
       run: false
     - name: forth-fail
       if: failed()
-      run false
+      run: false

@@ -12,6 +12,9 @@ jobs:
     - name: second-fail
       run: false
       if: success()
+    - name: am-i-skipped
+      run: false
+      if: success()
     - name: third-fail
       if: always()
       run: false

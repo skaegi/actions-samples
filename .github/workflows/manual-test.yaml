@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: first-fail
       run: false
-      continue-on-error
+      continue-on-error: true
     - name: second-fail
       run: false
     - name: third-fail

@@ -1,4 +1,4 @@
-name: Manua Test workflow
+name: Manual Test workflow
 on:
   workflow_dispatch
 
@@ -16,5 +16,5 @@ jobs:
       if: always()
       run: false
     - name: forth-fail
-      if: failed()
+      if: failure()
       run: false

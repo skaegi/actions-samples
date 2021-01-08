@@ -1,0 +1,16 @@
+name: Manua Test workflow
+on:
+  workflow_dispatch
+
+jobs:
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: first-fail
+      run: false
+      continue-on-error
+    - name: second-fail
+      run: false
+    - name: third-fail
+      if: always()
+      run: false

@@ -15,6 +15,6 @@ jobs:
     - name: third-fail
       if: always()
       run: false
-    - name forth-fail
+    - name: forth-fail
       if: failed()
       run false

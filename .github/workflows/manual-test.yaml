@@ -11,6 +11,10 @@ jobs:
       continue-on-error: true
     - name: second-fail
       run: false
+      if: success()
     - name: third-fail
       if: always()
       run: false
+    - name forth-fail
+      if: failed()
+      run false

@@ -10,7 +10,7 @@ jobs:
       run: false
       continue-on-error: true
     - name: second-fail
-      run: false
+      run: sleep 60 && false
       if: success()
     - name: am-i-skipped
       run: false
